@@ -76,6 +76,9 @@ const authOptions:NextAuthOptions={
             customSession.user.token=(token as AuthToken).token;
             return customSession;
         }
+    }, 
+    pages: {
+        
     }
 }
 
