@@ -16,8 +16,8 @@ export class VehiclesService{
         this.formDataClientHttp=new FormDataHTTPClient();
     }
 
-    async getAll(token:string):Promise<IGetAllVehiclesResponse>{
-        return this.clientHttp.get<IGetAllVehiclesResponse>(`${this.basePath}`,token)
+    async getAll(token:string,page:number=1):Promise<IGetAllVehiclesResponse>{
+        return this.clientHttp.get<IGetAllVehiclesResponse>(`${this.basePath}?page=${page}`,token)
     }
 
     async getById(token:string,vehicleId:string):Promise<IGetVehicleResponse>{

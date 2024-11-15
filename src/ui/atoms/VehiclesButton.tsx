@@ -14,7 +14,7 @@ const VehiclesButton = () => {
         const response=await fetch('/api/vehicles/get-all', {method: 'POST',body: JSON.stringify({token})});
         const responseData:IGetAllVehiclesResponse= await response.json();
         const vehicles=responseData.data;
-        console.log(vehicles);
+        console.log(responseData);
     }
     return (
         <button className='py-2 px-4 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600' onClick={()=>handleClick()}>Botón</button>

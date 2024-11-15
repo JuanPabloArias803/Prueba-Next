@@ -1,13 +1,12 @@
-import LogoutButton from "@/ui/atoms/LogoutBtn";
-import VehiclesButton from "@/ui/atoms/VehiclesButton";
+import Navbar from "@/ui/molecules/common/Navbar";
+import VehiclesTable from "@/ui/molecules/vehicles/VehicleTable";
 
 export default function VehiculesPage() {
 
     return (
       <>
-        <h1>Vehicles</h1>
-        <LogoutButton/>
-        <VehiclesButton/>
+        <Navbar></Navbar>
+        <VehiclesTable/>
       </>
     )
 }

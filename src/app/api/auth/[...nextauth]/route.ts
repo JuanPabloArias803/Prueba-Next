@@ -24,7 +24,7 @@ export interface CustomSession extends Session{
       };
 }
 
-const authOptions:NextAuthOptions={
+export const authOptions:NextAuthOptions={
     providers:[
         CredentialsProvider({
             name:"Credentials",
